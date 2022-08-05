@@ -1,2 +1,2 @@
-# Duhhman-Javascript
+# Royb-pub
 Named after my gaming name.
