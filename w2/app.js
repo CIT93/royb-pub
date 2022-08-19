@@ -1,29 +1,50 @@
 // <b> bold writing
-const displayOnPage = function(text) {
+const showOnPage = function (text) {
     let newParagraph = document.createElement('p')
-    newParagraph.innerHTML = text
-    let outputDiv = docuement.getElementById('output')
+    newParagraph.innerHTML = text;
+    let outputDiv = document.getElementById('output')
     outputDiv.append(newParagraph)
-}
+  }
 
 // Daily morning planning + Decisions
-// Determining if I have time to prepare lunch or grab something on the way to work
+// Determining if I have time to prepare breakfast or grab something on the way to work
 
 //Global Variables
-let isHungry = true
-let isTired = false
-let isMonday = true
+
+let isTired = true
 let isUpEarly = true
-let isTime = 4
-let isLateforwork = isTime <= 5
+let isHaveMilk = true;
+let isHungry = true;
 
 showOnPage('<b>Global Variables</b>')
-showOnPage('Am I late for work' + isLateforwork)
 
-// if and if else statements
-// determing if I have homework and if im in the mood for it or to tired today.
-if (isTired) {
-    c
+showOnPage('Am I tired,')
+if (isTired = true) { 
+    showOnPage('yes, but am I up early')
+
+} else { 
+    showOnPage('no, I should eat')
 }
 
+// if and if else statements
+// determing if I have time to eat or not before work
+if (isUpEarly = true) {
+    showOnPage('Yes....')
+} else {
+    showOnPage('No better just find food quick and head to work...')
+}
+// if im up early then I have time to make food or else i can grab something on the way to work
+if (isHungry = true) {
+
+    showOnPage(' Do I have milk?')
+ } else {
+        showOnPage(' Grab a snack for later for work')
+    
+}
+// if i have milk i can just do cereal else i can just grab a snack
+if (isHaveMilk = true) {
+    showOnPage('Yes....Grab some ceral and eat before work!')
+} else {
+    showOnPage('No...just head to work and grab a snack')
+}
 
