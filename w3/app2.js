@@ -27,7 +27,7 @@ let doHomework = function (Due = 1) {
     } else if (isDuein >= 1 && isDuein <= 2) {
       let isNow = ' it is due soon, hurry and do the homework!';
       return `Looks like you have homework, ${isNow}.`;
-    } else if (isDuein >= 4 ) {
+    } else if (isDuein >= 4 && isDuein <= 10 ) {
       let isOk = 'you have a few more days';
       let doRelax = 'just relax';
       let isAlright = `do homework, you can but it will be alright...but don't rush it.`;
