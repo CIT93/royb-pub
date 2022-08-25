@@ -20,14 +20,14 @@ let doHomework = function (Due = 1) {
   // Made something easy similar to our calendars just to show if I have homework due.
   let isDuein = function (_Days) {
     // if else statement determining if I have to rush to do homework or can take my time and spread it out.
-    if (isDuein >= 1 && isDuein <= 3) {
+    if (isDuein >= 1 && isDuein <= 2) {
       let isHomework = 'You need to do homework now.';
       let isDays = 'homework due date is coming up!';
       return `you have homework due, ${isHomework}, because the ${isDays}.`;
-    } else if (isDuein >= 1 && isDuein <= 2) {
+    } else if (isDuein >= 3 && isDuein <= 4) {
       let isNow = ' it is due soon, hurry and do the homework!';
       return `Looks like you have homework, ${isNow}.`;
-    } else if (isDuein >= 4 && isDuein <= 10 ) {
+    } else if (isDuein >= 5 && isDuein <= 10 ) {
       let isOk = 'you have a few more days';
       let doRelax = 'just relax';
       let isAlright = `do homework, you can but it will be alright...but don't rush it.`;
