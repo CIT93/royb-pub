@@ -23,13 +23,13 @@ const isDaysUntilDue = {
   whatToDo: '',
 
   determineDay: function (isDaysUntilDue) {
-    if (isDaysUntilDue = 1) {
+    if (isDaysUntilDue <= 1) {
       this.whatToDo = this.day.one;
-    } else if ((isDaysUntilDue = 2)) {
+    } else if ((isDaysUntilDue <= 2)) {
       this.whatToDo = this.day.two;
-    } else if ((isDaysUntilDue = 3)) {
+    } else if ((isDaysUntilDue <= 3)) {
       this.whatToDo = this.day.three;
-    } else if ((isDaysUntilDue = 4)) {
+    } else if ((isDaysUntilDue <= 4)) {
       this.whatToDo = this.day.four;
     } else { (isDaysUntilDue > 4) 
       this.whatToDo = this.day.fiveplus;
