@@ -3,3 +3,5 @@
 function refreshPage(){
 window. location. reload();
 }
+
+<input type="button" value="Reload Page" onClick="history.go(0)">
