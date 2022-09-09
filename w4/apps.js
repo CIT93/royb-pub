@@ -36,14 +36,11 @@ const isDaysUntilDue = {
     }
   },
 };
+for (count = 0; count < 1; count++) {
+  let min = 0;
+  let max = 4;
+  let x = Math.floor(Math.random() * (max - min + 1)) + min;
 
-isDaysUntilDue.determineDay(1);
+isDaysUntilDue.determineDay(x);
 showOnPage(`Things to do today.  ${isDaysUntilDue.whatToDo} `);
-isDaysUntilDue.determineDay(2);
-showOnPage(`Things to do today.  ${isDaysUntilDue.whatToDo} `);
-isDaysUntilDue.determineDay(3);
-showOnPage(`Things to do today.  ${isDaysUntilDue.whatToDo} `);
-isDaysUntilDue.determineDay(4);
-showOnPage(`Things to do today.  ${isDaysUntilDue.whatToDo} `);
-isDaysUntilDue.determineDay(5);
-showOnPage(`Things to do today.  ${isDaysUntilDue.whatToDo} `);
+}

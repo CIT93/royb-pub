@@ -6,6 +6,8 @@ const showOnPage = function (text) {
   };
 
 // Created an array of what to say to myself depending on the days due
+
+
 const due = [
     {
         whatToDo: `you need to do homework now it is due tomorrow!`,
@@ -23,6 +25,7 @@ const due = [
         whatToDo: `try to get ahead more, you have time.`,
       },
     ];
+
 
     const myDue = function (min, max) {
       min = Math.ceil(min);
@@ -56,7 +59,7 @@ const due = [
         `<b>FIVE or more days</b> until Homework is due, `,
 
       ];
-
+      
       window.onclick = myFunction;
       function myFunction() {
     document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
@@ -64,3 +67,5 @@ const due = [
       for (count = 0; count < 6; count++){
         showOnPage(`<center>Hey ${due[count].whatToDo}... you have ${until[count]} use your time wisely! You have ${myHomework[count].myDue} assignments due between your classes.</center>` );
     }
+    isDaysUntilDue.check(1);
+showOnPage(`Things to do today.  ${isDaysUntilDue.whatToDo} `);

@@ -5,7 +5,7 @@ const showOnPage = function (text) {
   outputDiv.append(newParagraph);
 };
 
-// Created an array of what to say to myself depending on the days due
+// Created an array of what to say to myself depending on thes due
 const due = [
   {
       whatToDo: `you need to do homework now it is due tomorrow!`,
@@ -23,6 +23,7 @@ const due = [
       whatToDo: `try to get ahead more, you have time.`,
     },
   ];
+
 
   const myDue = function (min, max) {
     min = Math.ceil(min);
@@ -56,16 +57,48 @@ const due = [
       `<b>FIVE or more days</b> until Homework is due, `,
 
     ];
+    
+    const isDaysUntilDue = {
+      day: { 
+        one: ' You need to do homework now it is due tomorrow!',
+        two: 'You have 2 days until homework due date is coming up!',
+        three: ' You have a three more Days, get started on your homework',
+        four: ' Do homework if you have time, you will be alright...but dont rush it, you have 4 days.',
+        fiveplus: 'Try to get ahead more, you have 6 days until homeworks due.',
+      },
 
-  let oddDay = []
-  oddDay = [0] `<center>Hey ${due[count].whatToDo}... you have ${until[count]} use your time wisely! You have ${myHomework[count].myDue} assignments due between your classes.</center>`
-  oddDay = [1] `<center>Hey ${due[count].whatToDo}... you have ${until[count]} use your time wisely! You have ${myHomework[count].myDue} assignments due between your classes.</center>`
-  oddDay = [2] `<center>Hey ${due[count].whatToDo}... you have ${until[count]} use your time wisely! You have ${myHomework[count].myDue} assignments due between your classes.</center>`
-  oddDay = [3] `<center>Hey ${due[count].whatToDo}... you have ${until[count]} use your time wisely! You have ${myHomework[count].myDue} assignments due between your classes.</center>`
-  oddDay = [4] `<center>Hey ${due[count].whatToDo}... you have ${until[count]} use your time wisely! You have ${myHomework[count].myDue} assignments due between your classes.</center>`
+   
+       getWork: function (work) {
+        this.hw = work;
+      },
+      toDo: '',
+    
+      determineDay: function (work) {
+        if (work <= 1) {
+          this.toDo = this.determine.one;
+        } if ((work  <= 2)) {
+          this.toDo = this.determine.two;
+        } if ((work  <= 3)) {
+          this.toDo = this.determine.three;
+        } if ((work  <= 4)) {
+          this.toDo = this.determine.four;
+        } else { (work  > 4) 
+          this.toDo = this.determine.fiveplus;
+        }
+      },
+    };
+
+    window.onclick = myFunction;
+    function myFunction() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor = "pink";
   
-  function oddDay () {
-    let randomDay = Math.floor(math.random()*(oddDay.length))
-    document.getElementById(`pday`).innerHTML = oddDay[randomDay];
-  }
-  showOnPage(oddDay)
+      for (count = 0; count < 1; count++) {
+        let min = 0;
+        let max = 4;
+        let x = Math.floor(Math.random() * (max - min)) + min;
+      
+      work.determineDay(x);
+      showOnPage(`<center>Hey  ${due[count].whatToDo}... you have ${until[count]} use your time wisely! You have ${myHomework[count].myDue} assignments due between your classes.</center>` );
+      }
+    }
+// cant figure out how to make it work for randomizing the days but keeping the functions together without creaing one big function.... will need to practice this more
