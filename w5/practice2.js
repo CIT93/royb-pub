@@ -7,11 +7,11 @@ const showOnPage = function (text) {
 
 const toDo = [
   `<center><font color="#000000" face="courier" size="3">go to work</center>`,
-  `<center><font color="#000000" face="courier" size="3">Check PE HomeWork</center>`,
-  `<center><font color="#000000" face="courier" size="3">Check JS Homework</center>`,
-  `<center><font color="#000000" face="courier" size="3">Check Health1 Homework</center>`,
-  `<center><font color="#000000" face="courier" size="3">Spend time with Rebecca</center>`,
-  `<center><font color="#000000" face="courier" size="3">Feed and hangout with Aaliyah, before her bedtime</center>`,
+  `<center><font color="#000000" face="courier" size="3">check PE HomeWork</center>`,
+  `<center><font color="#000000" face="courier" size="3">check JS Homework</center>`,
+  `<center><font color="#000000" face="courier" size="3">check Health1 Homework</center>`,
+  `<center><font color="#000000" face="courier" size="3">spend time with Rebecca</center>`,
+  `<center><font color="#000000" face="courier" size="4">feed and hangout with Aaliyah, before her bedtime</center>`,
 ];
 
 showOnPage(
@@ -119,7 +119,7 @@ const index = homeworkCheck.forEach(function (heading) {
   showOnPage(
     `<center><font color="#000000" face="courier" size="5">Homework to do: ${heading.myDue}
      <br><br><font color="#000000" face="courier" size="5">New Homework: ${heading.newHomework} <br><br>  ${plan(heading.myDue)}</font></center>`);
-  showOnPage(`<center>___________________</center>`);
+     showOnPage(`<center>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</center>`);
 });
 
 const allDone = function (gradeHomework, finishedHomework) {
