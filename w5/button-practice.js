@@ -51,3 +51,21 @@ function calculate_age(){
         let date = new Date().toDateString();
         document.querySelector('.output').textContent = date;
     }
+
+
+
+
+
+      
+<p> Current Date is: <span class="output"></span></p>
+      <button onclick="getCurrentDate()">Todays Date</button>
+
+
+// create a function that gets current date
+     function getCurrentDate() {
+        let date = new Date().toDateString();
+        document.querySelector('.output').textContent = date;
+    }
+
+
+
