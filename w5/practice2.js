@@ -15,7 +15,7 @@ const toDo = [
 ];
 
 showOnPage(
-  `<b><center><font color="#000000" face="courier" size="5"> Things left to do are ${toDo.length} today.</font></center></b> <br>`
+  `<b><center><font color="#000000" face="courier" size="5"> D ${toDo.length} today.</font></center></b> <br>`
 );
 
 toDo.forEach(function (toDo, index) {
@@ -111,15 +111,13 @@ const homeworkCheck = [
     newHomework: randomizeNum(1, 5),
     isAhead: undefined,
   },
-  
 ];
 
-const index = homeworkCheck.forEach(function (heading) {
-  showOnPage(`<b><center><font color="#000000" face="courier" size="5">${heading.day}</font></center></b>`);
-  showOnPage(
-    `<center><font color="#000000" face="courier" size="5">Homework to do: ${heading.myDue}
-     <br><br><font color="#000000" face="courier" size="5">New Homework: ${heading.newHomework} <br><br>  ${plan(heading.myDue)}</font></center>`);
-     showOnPage(`<center>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</center>`);
+const index = homeworkCheck.forEach(function (title) {
+  showOnPage(`<b><center><font color="#000000" face="courier" size="5">${title.day}</font></center></b>`);
+  showOnPage(`<center><font color="#000000" face="courier" size="5">Homework to do: ${title.myDue}
+  <br><br><font color="#000000" face="courier" size="5">New Homework: ${title.newHomework} <br><br>  ${plan(title.myDue)}</font></center>`);
+  showOnPage(`<center>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</center>`);
 });
 
 const allDone = function (gradeHomework, finishedHomework) {
