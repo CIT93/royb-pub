@@ -1,0 +1,62 @@
+html {
+    overflow-y: scroll;
+}
+body {
+	font-size: x-large;
+	background-color: rgb(228, 189, 225);
+	font-family: 'Courier New', Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif;
+	text-align: center;
+}
+#head-title {
+	font-size: xxx-large;
+	background-color: rgb(228, 189, 225);
+	border: 5px solid rgb(221, 123, 188);
+	font-family: 'Courier New', Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif;
+	width: 1200px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: auto;
+}
+#input-title {
+	font-size: xx-large;
+	margin-top: 35px;
+}
+#lists {
+	font-size: large;
+	background-color: rgb(228, 189, 225);
+	border: 5px solid rgb(221, 123, 188);
+	width: 300px;
+	padding-top: 1px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#idea-options {
+	font-size: large;
+	background-color: rgb(228, 189, 225);
+	border: 6px solid rgb(221, 123, 188);
+	width: 600px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#idea-buttons {
+	font-size: large;
+	width: 400px;
+	margin: auto;
+}
+.ideas {
+	font-size: large;
+	width: 75px;
+	margin-bottom: 25px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
